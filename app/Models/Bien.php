@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Bien extends Model
 {
     use HasFactory;
+    // protected $fillable = ['category_id' , 'user_id' , 'description' , 'city' , 'price' 'image' ,'name'];
 }
