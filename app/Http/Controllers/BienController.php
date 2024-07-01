@@ -12,6 +12,7 @@ class BienController extends Controller
      */
     public function index()
     {
+        // creation des variables
         $categories = Category::all();
         $biens = Bien ::all();
         return view('index', compact('biens' , 'categories'));

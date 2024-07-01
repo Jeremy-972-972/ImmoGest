@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BienController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,5 +18,6 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('index', [BienController::class, 'index'])->name('index');
 Route::get('show', [BienController::class, 'show'])->name('show');
+
 
 require __DIR__.'/auth.php';
