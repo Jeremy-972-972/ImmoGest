@@ -19,11 +19,15 @@ class BienFactory extends Factory
         return [
             'user_id' =>fake()->randomElement([1,2,3,4,5,6,7,8,9,10]),
             'category_id' =>fake()->randomNumber(1,2,3,4,5,6,7,8,9,10),
+            'state' =>fake()->randomNumber('loué' , 'pas loué'),
             'name' =>fake()->word(),
             'description' =>fake()->sentence(),
+            'address' =>fake()->sentence(),
+            'address' =>fake()->address(),
             'price' =>fake()->randomFloat(),
-            'city' =>fake()->streetAddress(),
-            'image' =>fake()->imageUrl(640, 480, 'house' , true),
+            'city' =>fake()->city(),
+            'price' =>fake()->randomFloat(),
+            'image' =>fake()->imageUrl(640, 480, 'Maison' , true),
         ];
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BienController;
+use App\Http\Controllers\TutoController;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
@@ -17,7 +17,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-Route::get('index', [BienController::class, 'index'])->name('index');
-Route::get('show', [BienController::class, 'show'])->name('show');
+Route::get('/tuto', [TutoController::class, 'index']);
+
+
 
 require __DIR__.'/auth.php';
