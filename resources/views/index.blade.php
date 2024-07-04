@@ -1,4 +1,8 @@
-<x-app-layout>
+
+
+{{-- Immo Gest --}}
+
+{{-- <x-app-layout>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +23,7 @@
         <div class="prod-title m-4" >
             {{-- ne pa utiliser --}}
         {{-- <p class="text-2x1 uppercase text-sm text bg-gray-900 font-bold">{{$rowBien->name}}</p> --}}
-        <p class="uppercase text-sm text-gray-400">
+        {{-- <p class="uppercase text-sm text-gray-400">
             {{$categories[$rowBien->category_id-1]->name}}
         </p>
     </div>
@@ -43,7 +47,7 @@
         
 </body>
 </html>
-</x-app-layout>
+</x-app-layout> --}}
 
 <!-- component -->
 {{-- <div tabindex="0" class="focus:outline-none">

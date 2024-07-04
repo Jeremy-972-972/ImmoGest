@@ -19,6 +19,9 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('/tuto', [TutoController::class, 'index']);
 
+Route::post('posts/{post}/comments', [CommentController::class,'store'])->middleware('auth')->name('comments.store');
+    Route::get('/index', [PostController::class, 'index'])->name('index');
+    Route::get('/show', [PostController::class, 'show'])->name('show');
 
 
 require __DIR__.'/auth.php';
